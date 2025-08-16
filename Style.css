@@ -1,0 +1,11 @@
+#main {
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+#main-body{
+    background-image: url("Assets/wp8018066-8k-dark-wallpapers\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
