@@ -14,13 +14,17 @@
   font-weight: 900;
   font-size: 70px;
   margin-top: 14rem; 
+  border-right: .15em solid rgb(255, 255, 255); 
 
-  white-space: nowrap;        /* keep text on one line */
-  overflow: hidden;           /* hide the text while typing */
-  border-right: .15em solid white; /* typing cursor */
+  white-space: nowrap;    
+  overflow: hidden;         
+  border-right: .17em solid white; 
   
-  animation: typing 3s steps(20, end) forwards, /* typing effect */
-             blink .7s step-end infinite;       /* cursor blink */
+ letter-spacing: 1px; 
+  animation: 
+    typing 1s steps(25 , end),
+    blink-caret .75s step-end infinite;
+    
 }
 
 @keyframes fade{
@@ -33,14 +37,15 @@
     }
 }
 
+
 @keyframes typing {
   from { width: 0 }
-  to { width: 20ch } /* adjust to your text length */
+  to { width: 100% }
 }
 
-
-@keyframes blink {
-  50% { border-color: transparent }
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 255, 255); }
 }
 
 
