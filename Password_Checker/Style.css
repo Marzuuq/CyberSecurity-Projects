@@ -117,7 +117,7 @@ nav a {
 /* styling of whole input container */
 .form {
   --timing: 0.3s;
-  --width-of-input: 450px;
+  --width-of-input: 45rem;
   --height-of-input: 50px;
   --border-height: 2px;
   --input-bg: #fff;
@@ -197,6 +197,20 @@ input:not(:placeholder-shown) ~ .reset {
 
 .form {
   margin: 0 auto;
-  margin-top: 5vh;
+  margin-top: 6vh;
   transform: translateY(-40%);
+}
+
+.footer-main{
+  
+
+  display: flex;
+  align-items: center;
+  background-color: rgb(5, 5, 5);
+  justify-content: center;
+  margin-top: 50vh;
+    
+}
+.footer-name{
+  color: white;
 }
